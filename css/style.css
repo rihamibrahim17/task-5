@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.cars .first{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 8px;
+}   
+
+.cars .first .second {
+    height: 390px;
+    text-align: left;
+    padding-left: 40px;
+    width: 250px;
+}
+
+
+.cars .first .second img{
+    padding-top: 25px;
+    padding-bottom: 30PX;
+}
+
+.cars .first .second h3{
+    Font-size: 25px;
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 25px;
+    font-family: 'Lexend Deca';
+}
+
+
+.cars .first .second p{
+    Font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 25px;
+    font-family: 'Lexend Deca';
+    width: 200px;
+    line-height: 25px;
+}
+
+.cars .first .car1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+.cars .first .car1 button{
+    color: hsl(31, 77%, 52%)
+}
+
+.cars .first .car2{
+    background-color: hsl(184, 100%, 22%);
+}
+.cars .first .car2 button{
+    color: hsl(184, 100%, 22%);
+}
+
+.cars .first .car3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom: 8px;
+}
+.cars .first .car3 button{
+    color: hsl(179, 100%, 13%);
+}
+
+.cars .first .second button{
+    margin-top: 25px;
+    padding: 11px 35px;
+    font-size: 13px;
+    border-radius: 20px;
+    font-family:  sans-serif;
+}
+
+.cars .first .car1 button:hover{
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border-color: white;
+}
+.cars .first .car2 button:hover{
+    cursor: pointer;
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border-color: white;
+}
+.cars .first .car3 button:hover{
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border-color: white;
+}
+
+
+@media(max-width:860px){
+    .cars {
+        height: auto;
+    }
+    .cars .first{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin:8px 0px;
+    }
+    .cars .first .car1{
+        border-radius: 10px 0px 0px 0px;
+    }
+    .cars .first .car2{
+        border-radius: 0px 10px 0px 0px;
+    }
+    .cars .first .car3{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media(max-width:600px){
+    .cars {
+        height: auto;
+        width: auto;
+    }
+    .cars .first{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    .cars .first .second{
+        width: auto;
+    }
+    .cars .first .car1{
+        border-radius: 10px 0px 0px 0px;
+    }
+    .cars .first .car2{
+        border-radius: 0px 0px 0px 0px;
+    }
+    .cars .first .car3{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+
+@media(max-width:420px){
+    .cars {
+        height: auto;
+    }
+    .cars .first{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cars .first .second{
+        width: auto;
+    }
+    .cars .first .car1{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .cars .first .car2{
+        border-radius: 0px 0px 0px 0px;
+    }
+    .cars .first .car3{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
